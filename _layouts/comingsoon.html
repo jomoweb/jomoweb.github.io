@@ -5,6 +5,8 @@
     <link href="https://fonts.googleapis.com/css?family=Bungee|Lato:400,900" rel="stylesheet">
     <style>
 
+      /* Gradients from http://uigradients.com/# */
+
       html {
         box-sizing: border-box;
       }
@@ -31,7 +33,9 @@
       }
 
       .left-wrapper {
-        background-color: #4285f4;
+        background: #DA22FF; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
         float: left;
         padding: 10rem 3rem;
         position: relative;
@@ -40,7 +44,7 @@
       }
 
       .left-wrapper:after {
-        background-color: #4285f4;
+        background-color: #DA22FF;
         content: "";
         height: 100vh;
         position: absolute;
@@ -88,15 +92,28 @@
       }
 
       .button {
-        border: 1px solid #fff;
+        background: #DA22FF; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #DA22FF , #9733EE); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #DA22FF , #9733EE); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background: #02AAB0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to left, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to left, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        box-shadow: 0 .75rem 1.5rem 0 rgba(0,0,0,.5);
         color: #fff;
         display: inline-block;
         font-weight: normal;
-        padding: .5rem 1rem;
+        padding: 1rem 2rem;
         text-align: center;
         text-decoration: none;
         text-shadow: 1px 1px 1px #000000;
       }
+
+      .button:hover {
+        background: #02AAB0; /* fallback for old browsers */
+        background: -webkit-linear-gradient(to right, #02AAB0 , #00CDAC); /* Chrome 10-25, Safari 5.1-6 */
+        background: linear-gradient(to right, #02AAB0 , #00CDAC); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+      }
+
     </style>
   <head>
   <body>
@@ -105,7 +122,7 @@
       <div class="left-wrapper">
         
         <h1><span>Hi, I'm John Moore.</span><br>I provide first-rate digital marketing solutions to exceptional companies.</h1>
-        <a href="https://www.linkedin.com/in/jomoweb" class="button">LinkedIn</a>
+        <a href="https://www.linkedin.com/in/jomoweb" class="button" target="_blank">LinkedIn</a>
 
       </div>
       <div class="divider">
