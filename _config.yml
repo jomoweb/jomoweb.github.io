@@ -17,3 +17,7 @@ github_username:  jomoweb
 
 # Build settings
 markdown: kramdown
+
+# Sitemap Generator
+gems:
+  - jekyll-sitemap
