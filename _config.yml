@@ -20,4 +20,4 @@ markdown: kramdown
 
 # Sitemap Generator
 gems:
-  - jekyll-sitemap
+  #- jekyll-sitemap
