@@ -5,7 +5,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <title>John Moore Digital Inc. | Portland, OR Digital Marketing</title>
-    <meta name="description" content="Provides first-rate digital marketing services to exceptional companies. Based in Portland, Oregon. Website Design and Development, User Expreience (UX), Search Engine Marketing (SEO + PPC).">
+    <meta name="description" content="{{ site.description }}">
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -22,14 +22,23 @@
     <meta property="fb:app_id" content="1735573436764195">
     <meta property="og:url" content="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
     <meta property="og:type" content="website">
-    <meta property="og:title" content="John Moore Digital Inc. | Portland, OR Digital Marketing">
-    <meta property="og:description" content="Provides first-rate digital marketing services to exceptional companies. Based in Portland, Oregon. Website Design and Development, User Expreience (UX), Search Engine Marketing (SEO + PPC).">
+    <meta property="og:title" content="{{ site.title }}">
+    <meta property="og:description" content="{{ site.description }}">
     <meta property="og:image" content="https://johnmooredigital.com/assets/images/og-image-default.png">
+    <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1200">
     <meta property="og:image:height" content="630">
-
     <!-- / OpenGraph Meta Tags -->
 
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@jomoweb">
+    <meta name="twitter:creator" content="@jomoweb">
+    <meta name="twitter:title" content="{{ site.title }}">
+    <meta name="twitter:description" content="{{ site.description }}">
+    <meta name="twitter:image" content="https://johnmooredigital.com/assets/images/og-image-default.png">
+    <!-- / Twitter Card -->
+    
     <style>
 
       /* latin-ext */
