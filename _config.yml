@@ -11,7 +11,7 @@ email: john@johnmooredigital.com
 description: > # this means to ignore newlines until "baseurl:"
   John Moore is a Digital Marketing expert based in Portland, Oregon.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://johnmooredigital.com" # the base hostname & protocol for your site
+url: "https://johnmooredigital.com" # the base hostname & protocol for your site
 twitter_username: jomoweb
 github_username:  jomoweb
 
